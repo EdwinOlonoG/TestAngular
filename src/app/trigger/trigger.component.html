@@ -1,0 +1,4 @@
+Tiempo intervalo: <input type="number" [(ngModel)]="timeLapse">
+Tiempo duracion: <input type="number" [(ngModel)]="timeLoader">
+<button (click)="activateLoader()">Enviar</button>
+<app-loader *ngIf="showImage" [timeLoader]="timeLoader * 1000" [timeLapse]="timeLapse * 1000"></app-loader>
